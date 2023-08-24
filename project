@@ -1,3 +1,4 @@
+cd ~
 composer create-project laravel/laravel --prefer-dist application 
 cd application/
 composer req laravel/ui 
