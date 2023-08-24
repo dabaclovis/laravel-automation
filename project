@@ -1,0 +1,29 @@
+composer create-project laravel/laravel --prefer-dist application 
+cd application/
+composer req laravel/ui 
+php artisan ui bootstrap --auth 
+composer req laravelcollective/html 
+composer req livewire/livewire 
+php artisan make:controller PagesController 
+php artisan make:model Post -mfc 
+php artisan make: model Form -mfc 
+php artisan make:model Person -mfc 
+cd resources/views 
+mkdir partials dashboard pages forms people 
+mv home.blade.php dashboard
+cd partials 
+touch navbar.blade.php footer.blade.php search.blade.php 
+cd ..
+mv welcome.blade.php pages 
+cd pages 
+touch index.blade.php about.blade.php policy.blade.php 
+cd ..
+cd dashboard
+touch profile.blade.php setting.blade.php 
+cd ..
+cd forms 
+touch index.blade.php create.blade.php show.blade.php edit.blade.php 
+cd ..
+cd people 
+touch index.blade.php create.blade.php show.blade.php edit.blade.php
+cd ~
