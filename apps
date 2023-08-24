@@ -1,4 +1,4 @@
-sudo mv ~/application /var/www/application 
+sudo mv application /var/www/application 
 sudo chown -R $USER:$USER /var/www/application 
 sudo chmod o+w /var/www/appliation/storage 
 sudo chown -R www-data:www-data /var/www/application/storage
